@@ -4,17 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chibuzor Promise - Copywriting Specialist</title>
-    <meta name="description" content="Professional copywriting services that convert visitors into customers" />
+    <title>Chibuzor Promise - Expert Copywriter | Convert Words Into Sales</title>
+    <meta name="description" content="Professional copywriting services that convert visitors into customers. Expert sales copy, content marketing, and email campaigns that drive results." />
+    <meta name="keywords" content="copywriting, sales copy, content marketing, email marketing, conversion optimization" />
+    <meta name="author" content="Chibuzor Promise" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Chibuzor Promise - Expert Copywriter" />
+    <meta property="og:description" content="Professional copywriting services that convert visitors into customers" />
+    <meta property="og:type" content="website" />
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <!-- Header -->
@@ -37,6 +49,9 @@
                         <a href="mailto:ikennachibuzor50@gmail.com" class="social-link" aria-label="Email">
                             <i class="fas fa-envelope"></i>
                         </a>
+                        <a href="https://twitter.com/chibuzorpromise" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter Profile">
+                            <i class="fab fa-twitter"></i>
+                        </a>
                     </div>
                     
                     <button class="btn btn-primary" onclick="openEmail()">Get Started</button>
@@ -49,7 +64,7 @@
                         </a>
                     </div>
                     <button class="btn btn-primary btn-sm" onclick="openEmail()">Contact</button>
-                    <button class="menu-toggle" onclick="toggleMenu()">
+                    <button class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle Menu">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -72,6 +87,9 @@
                         <a href="mailto:ikennachibuzor50@gmail.com" class="social-link">
                             <i class="fas fa-envelope"></i>
                         </a>
+                        <a href="https://twitter.com/chibuzorpromise" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -91,7 +109,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <span>Trusted by 50+ businesses</span>
+                    <span>Trusted by 50+ businesses worldwide</span>
                 </div>
                 
                 <h1 class="hero-title">
@@ -100,23 +118,24 @@
                 
                 <p class="hero-subtitle">
                     I'm Chibuzor Promise, a copywriting specialist who transforms your ideas into 
-                    compelling stories that drive action and grow your business.
+                    compelling stories that drive action, boost conversions, and grow your business exponentially.
                 </p>
                 
                 <div class="hero-buttons">
                     <button class="btn btn-primary btn-lg" onclick="openEmail()">
                         Start Your Project
-                        <i class="fas fa-arrow-right"></i>
+                        <i class="fas fa-rocket"></i>
                     </button>
-                    <button class="btn btn-outline btn-lg">
-                        View My Work
+                    <button class="btn btn-outline-white btn-lg" onclick="document.querySelector('#services').scrollIntoView({behavior: 'smooth'})">
+                        View My Services
+                        <i class="fas fa-arrow-down"></i>
                     </button>
                 </div>
                 
                 <div class="hero-stats">
                     <div class="stat">
                         <div class="stat-number">98%</div>
-                        <div class="stat-label">Client Satisfaction</div>
+                        <div class="stat-label">Client Satisfaction Rate</div>
                     </div>
                     <div class="stat">
                         <div class="stat-number">150+</div>
@@ -124,7 +143,7 @@
                     </div>
                     <div class="stat">
                         <div class="stat-number">24hr</div>
-                        <div class="stat-label">Average Response</div>
+                        <div class="stat-label">Average Response Time</div>
                     </div>
                 </div>
             </div>
@@ -135,41 +154,50 @@
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
-                <h2>Services That <span class="accent">Deliver Results</span></h2>
-                <p>From persuasive sales copy to engaging content marketing, I help businesses communicate their value and connect with their ideal customers.</p>
+                <h2>Services That <span class="accent">Drive Results</span></h2>
+                <p>From persuasive sales copy to engaging content marketing, I help businesses communicate their value proposition and connect with their ideal customers through strategic copywriting.</p>
             </div>
             
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Sales Copy</h3>
-                    <p>High-converting sales pages, product descriptions, and promotional content that turns visitors into customers.</p>
+                    <div class="service-icon">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Sales Copy That Converts</h3>
+                    <p>High-converting sales pages, product descriptions, and promotional content that turns casual visitors into paying customers and maximizes your revenue potential.</p>
                     <ul class="feature-list">
-                        <li>Landing Pages</li>
-                        <li>Product Copy</li>
-                        <li>Sales Emails</li>
-                        <li>Ad Copy</li>
+                        <li><i class="fas fa-check"></i> Landing Pages</li>
+                        <li><i class="fas fa-check"></i> Product Descriptions</li>
+                        <li><i class="fas fa-check"></i> Sales Emails</li>
+                        <li><i class="fas fa-check"></i> Ad Copy & Campaigns</li>
                     </ul>
                 </div>
                 
                 <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
                     <h3>Content Marketing</h3>
-                    <p>Engaging blog posts, articles, and web content that builds authority and drives organic traffic.</p>
+                    <p>Engaging blog posts, articles, and web content that builds authority, drives organic traffic, and positions your brand as an industry leader.</p>
                     <ul class="feature-list">
-                        <li>Blog Posts</li>
-                        <li>Website Copy</li>
-                        <li>SEO Content</li>
-                        <li>Social Media</li>
+                        <li><i class="fas fa-check"></i> Blog Posts & Articles</li>
+                        <li><i class="fas fa-check"></i> Website Copy</li>
+                        <li><i class="fas fa-check"></i> SEO Content</li>
+                        <li><i class="fas fa-check"></i> Social Media Content</li>
                     </ul>
                 </div>
                 
                 <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
                     <h3>Email Marketing</h3>
-                    <p>Compelling email sequences and newsletters that nurture leads and boost customer retention.</p>
+                    <p>Compelling email sequences and newsletters that nurture leads, boost customer retention, and create lasting relationships with your audience.</p>
                     <ul class="feature-list">
-                        <li>Email Sequences</li>
-                        <li>Newsletters</li>
-                        <li>Automation</li>
-                        <li>Welcome Series</li>
+                        <li><i class="fas fa-check"></i> Email Sequences</li>
+                        <li><i class="fas fa-check"></i> Newsletter Campaigns</li>
+                        <li><i class="fas fa-check"></i> Automation Setup</li>
+                        <li><i class="fas fa-check"></i> Welcome Series</li>
                     </ul>
                 </div>
             </div>
@@ -181,33 +209,35 @@
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
-                    <h2>Hi, I'm <span class="accent">Chibuzor Promise</span></h2>
+                    <h2>Meet <span class="accent">Chibuzor Promise</span></h2>
                     <div class="about-description">
-                        <p>I'm a copywriting specialist with a passion for turning ideas into words that work. For over 3 years, I've helped businesses across various industries communicate their value and connect with their ideal customers.</p>
+                        <p>I'm a copywriting specialist with an unwavering passion for turning ideas into words that work. For over 3 years, I've helped businesses across various industries communicate their unique value and forge meaningful connections with their ideal customers.</p>
                         
-                        <p>My approach isn't just about pretty words—it's about understanding your audience, your goals, and crafting messages that drive real results. Whether you need sales copy that converts or content that engages, I bring strategy and creativity to every project.</p>
+                        <p>My approach transcends pretty words—it's about understanding your audience's deepest desires, your business goals, and crafting strategic messages that drive measurable results. Whether you need sales copy that converts or content that captivates, I bring both creative flair and data-driven strategy to every project.</p>
                         
-                        <p>When I'm not crafting compelling copy, you'll find me reading about consumer psychology, analyzing successful campaigns, or helping other freelancers grow their businesses.</p>
+                        <p>When I'm not crafting compelling copy, you'll find me studying consumer psychology, analyzing breakthrough campaigns, or mentoring other freelancers in the art of persuasive writing.</p>
                     </div>
-                    <button class="btn btn-primary btn-lg" onclick="openEmail()">Let's Work Together</button>
+                    <button class="btn btn-white btn-lg" onclick="openEmail()">
+                        Let's Work Together
+                        <i class="fas fa-handshake"></i>
+                    </button>
                 </div>
                 
                 <div class="about-card">
-                    <div class="card-background"></div>
                     <div class="card-content">
                         <h3>Why Choose Me?</h3>
                         <ul class="benefits-list">
                             <li>
-                                <strong>Results-Driven:</strong> Every word is written with your business goals in mind
+                                <strong>Results-Driven Approach:</strong> Every word is strategically crafted with your business objectives and ROI in mind
                             </li>
                             <li>
-                                <strong>Fast Turnaround:</strong> Quality work delivered on time, every time
+                                <strong>Lightning-Fast Delivery:</strong> Premium quality work delivered on schedule, every single time
                             </li>
                             <li>
-                                <strong>Strategic Approach:</strong> Copy that aligns with your brand and converts
+                                <strong>Strategic Methodology:</strong> Copy that seamlessly aligns with your brand voice and converts prospects
                             </li>
                             <li>
-                                <strong>Unlimited Revisions:</strong> We work together until you're 100% satisfied
+                                <strong>Unlimited Revisions:</strong> We collaborate closely until you're completely satisfied with the results
                             </li>
                         </ul>
                     </div>
@@ -221,7 +251,7 @@
         <div class="container">
             <div class="section-header">
                 <h2>What Clients Say About <span class="accent">My Work</span></h2>
-                <p>Don't just take my word for it. Here's what business owners and marketing professionals say about working with me.</p>
+                <p>Don't just take my word for it. Here's what business owners and marketing professionals say about the transformative power of working with me.</p>
             </div>
             
             <div class="testimonials-grid">
@@ -233,10 +263,10 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>"Chibuzor's copy increased our conversion rate by 340%. Her understanding of our audience and ability to craft compelling messages is exceptional."</p>
+                    <p>"Chibuzor's copy increased our conversion rate by an astounding 340%. Her deep understanding of our target audience and ability to craft compelling, action-driven messages is absolutely exceptional."</p>
                     <div class="testimonial-author">
                         <div class="author-name">Sarah Johnson</div>
-                        <div class="author-role">Marketing Director, TechFlow</div>
+                        <div class="author-role">Marketing Director, TechFlow Solutions</div>
                     </div>
                 </div>
                 
@@ -248,10 +278,10 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>"Working with Promise was a game-changer. She didn't just write copy—she understood our business goals and delivered content that actually moves the needle."</p>
+                    <p>"Working with Promise was an absolute game-changer for our business. She didn't just write copy—she understood our vision, analyzed our goals, and delivered content that actually moves the revenue needle."</p>
                     <div class="testimonial-author">
                         <div class="author-name">Marcus Chen</div>
-                        <div class="author-role">Founder, GrowthLab</div>
+                        <div class="author-role">Founder & CEO, GrowthLab</div>
                     </div>
                 </div>
                 
@@ -263,7 +293,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p>"The email sequences Promise wrote for us generated over $50k in additional revenue in the first month. Her strategic approach is unmatched."</p>
+                    <p>"The email sequences Promise created for us generated over $50,000 in additional revenue within the first month alone. Her strategic approach and conversion expertise is absolutely unmatched in the industry."</p>
                     <div class="testimonial-author">
                         <div class="author-name">Emily Rodriguez</div>
                         <div class="author-role">E-commerce Manager, StyleHub</div>
@@ -278,20 +308,21 @@
         <div class="container">
             <div class="cta-content">
                 <h2>Ready to Transform Your Business with Powerful Copy?</h2>
-                <p>Let's discuss your project and create copy that connects with your audience and drives the results you're looking for.</p>
+                <p>Let's discuss your unique project requirements and create copy that resonates with your audience, builds trust, and drives the exceptional results you're looking for.</p>
                 
                 <div class="cta-buttons">
-                    <button class="btn btn-white btn-lg" onclick="openEmail()">
+                    <button class="btn btn-primary btn-lg" onclick="openEmail()">
                         Get Started Today
-                        <i class="fas fa-arrow-right"></i>
+                        <i class="fas fa-rocket"></i>
                     </button>
-                    <button class="btn btn-outline-white btn-lg">
+                    <button class="btn btn-outline btn-lg" onclick="window.open('https://calendly.com/chibuzorpromise', '_blank')">
                         Schedule a Call
+                        <i class="fas fa-calendar-alt"></i>
                     </button>
                 </div>
                 
                 <div class="cta-contact">
-                    <p>Get in touch directly:</p>
+                    <p>Prefer direct contact? Reach out immediately:</p>
                     <a href="mailto:ikennachibuzor50@gmail.com" class="contact-email">ikennachibuzor50@gmail.com</a>
                 </div>
             </div>
@@ -304,7 +335,7 @@
             <div class="footer-content">
                 <div class="footer-about">
                     <h3>Chibuzor <span class="accent">Promise</span></h3>
-                    <p>Copywriting specialist helping businesses communicate their value and connect with their ideal customers through powerful, converting copy.</p>
+                    <p>Expert copywriting specialist helping businesses communicate their value proposition and connect with their ideal customers through powerful, conversion-focused copy that drives measurable results.</p>
                     
                     <div class="footer-social">
                         <a href="https://www.linkedin.com/in/chibuzor-promise" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
@@ -313,23 +344,31 @@
                         <a href="mailto:ikennachibuzor50@gmail.com" class="social-link" aria-label="Email">
                             <i class="fas fa-envelope"></i>
                         </a>
+                        <a href="https://twitter.com/chibuzorpromise" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter Profile">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com/chibuzorpromise" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram Profile">
+                            <i class="fab fa-instagram"></i>
+                        </a>
                     </div>
                 </div>
                 
                 <div class="footer-services">
-                    <h4>Services</h4>
+                    <h4>Core Services</h4>
                     <ul>
-                        <li>Sales Copy</li>
-                        <li>Content Marketing</li>
-                        <li>Email Marketing</li>
-                        <li>Website Copy</li>
+                        <li>Sales Copy & Landing Pages</li>
+                        <li>Content Marketing Strategy</li>
+                        <li>Email Marketing Campaigns</li>
+                        <li>Website Copy & SEO</li>
+                        <li>Ad Copy & Social Media</li>
+                        <li>Brand Voice Development</li>
                     </ul>
                 </div>
                 
                 <div class="footer-contact">
-                    <h4>Get In Touch</h4>
+                    <h4>Let's Connect</h4>
                     <div class="contact-info">
-                        <p>Ready to start your project?</p>
+                        <p>Ready to start your next project?</p>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
                             <a href="mailto:ikennachibuzor50@gmail.com" class="contact-link">ikennachibuzor50@gmail.com</a>
@@ -338,12 +377,16 @@
                             <i class="fab fa-linkedin"></i>
                             <a href="https://www.linkedin.com/in/chibuzor-promise" target="_blank" rel="noopener noreferrer" class="contact-link">Connect on LinkedIn</a>
                         </div>
+                        <div class="contact-item">
+                            <i class="fab fa-twitter"></i>
+                            <a href="https://twitter.com/chibuzorpromise" target="_blank" rel="noopener noreferrer" class="contact-link">Follow on Twitter</a>
+                        </div>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 Chibuzor Promise. All rights reserved.</p>
+                <p>&copy; 2024 Chibuzor Promise. All rights reserved. | Crafting words that convert since 2021</p>
             </div>
         </div>
     </footer>
