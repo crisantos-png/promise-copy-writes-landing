@@ -25,13 +25,13 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-slate-900 text-white">
+    <section className="py-20 px-4 bg-gradient-to-b from-green-900 to-emerald-800 text-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            What Clients Say About <span className="text-cyan-400">My Work</span>
+            What Clients Say About <span className="text-green-300">My Work</span>
           </h2>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+          <p className="text-xl text-green-100 max-w-3xl mx-auto">
             Don't just take my word for it. Here's what business owners and marketing 
             professionals say about working with me.
           </p>
@@ -39,19 +39,19 @@ const Testimonials = () => {
         
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-slate-800 border-slate-700 hover:bg-slate-750 transition-all duration-300">
+            <Card key={index} className="bg-green-800 border-green-700 hover:bg-green-750 transition-all duration-300">
               <CardContent className="p-8">
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
                     <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <p className="text-blue-100 mb-6 leading-relaxed italic">
+                <p className="text-green-100 mb-6 leading-relaxed italic">
                   "{testimonial.content}"
                 </p>
                 <div>
                   <div className="font-semibold text-white">{testimonial.name}</div>
-                  <div className="text-blue-300 text-sm">{testimonial.role}</div>
+                  <div className="text-green-300 text-sm">{testimonial.role}</div>
                 </div>
               </CardContent>
             </Card>
