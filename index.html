@@ -1,26 +1,354 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>promise-copy-writes-landing</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chibuzor Promise - Copywriting Specialist</title>
+    <meta name="description" content="Professional copywriting services that convert visitors into customers" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Chibuzor <span class="accent">Promise</span></h1>
+                </div>
+                
+                <nav class="nav desktop-nav">
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#testimonials" class="nav-link">Testimonials</a>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/chibuzor-promise" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:ikennachibuzor50@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    
+                    <button class="btn btn-primary" onclick="openEmail()">Get Started</button>
+                </nav>
+                
+                <div class="mobile-nav">
+                    <div class="mobile-social">
+                        <a href="https://www.linkedin.com/in/chibuzor-promise" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                    <button class="btn btn-primary btn-sm" onclick="openEmail()">Contact</button>
+                    <button class="menu-toggle" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-content">
+                <a href="#services" class="mobile-nav-link" onclick="closeMenu()">Services</a>
+                <a href="#about" class="mobile-nav-link" onclick="closeMenu()">About</a>
+                <a href="#testimonials" class="mobile-nav-link" onclick="closeMenu()">Testimonials</a>
+                <div class="mobile-menu-footer">
+                    <div class="mobile-menu-social">
+                        <a href="https://www.linkedin.com/in/chibuzor-promise" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:ikennachibuzor50@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <meta property="og:title" content="promise-copy-writes-landing" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-rating">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <span>Trusted by 50+ businesses</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Words That <span class="gradient-text">Convert</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    I'm Chibuzor Promise, a copywriting specialist who transforms your ideas into 
+                    compelling stories that drive action and grow your business.
+                </p>
+                
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-lg" onclick="openEmail()">
+                        Start Your Project
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-outline btn-lg">
+                        View My Work
+                    </button>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Projects Completed</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">24hr</div>
+                        <div class="stat-label">Average Response</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Services That <span class="accent">Deliver Results</span></h2>
+                <p>From persuasive sales copy to engaging content marketing, I help businesses communicate their value and connect with their ideal customers.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Sales Copy</h3>
+                    <p>High-converting sales pages, product descriptions, and promotional content that turns visitors into customers.</p>
+                    <ul class="feature-list">
+                        <li>Landing Pages</li>
+                        <li>Product Copy</li>
+                        <li>Sales Emails</li>
+                        <li>Ad Copy</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Content Marketing</h3>
+                    <p>Engaging blog posts, articles, and web content that builds authority and drives organic traffic.</p>
+                    <ul class="feature-list">
+                        <li>Blog Posts</li>
+                        <li>Website Copy</li>
+                        <li>SEO Content</li>
+                        <li>Social Media</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <h3>Email Marketing</h3>
+                    <p>Compelling email sequences and newsletters that nurture leads and boost customer retention.</p>
+                    <ul class="feature-list">
+                        <li>Email Sequences</li>
+                        <li>Newsletters</li>
+                        <li>Automation</li>
+                        <li>Welcome Series</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Hi, I'm <span class="accent">Chibuzor Promise</span></h2>
+                    <div class="about-description">
+                        <p>I'm a copywriting specialist with a passion for turning ideas into words that work. For over 3 years, I've helped businesses across various industries communicate their value and connect with their ideal customers.</p>
+                        
+                        <p>My approach isn't just about pretty words—it's about understanding your audience, your goals, and crafting messages that drive real results. Whether you need sales copy that converts or content that engages, I bring strategy and creativity to every project.</p>
+                        
+                        <p>When I'm not crafting compelling copy, you'll find me reading about consumer psychology, analyzing successful campaigns, or helping other freelancers grow their businesses.</p>
+                    </div>
+                    <button class="btn btn-primary btn-lg" onclick="openEmail()">Let's Work Together</button>
+                </div>
+                
+                <div class="about-card">
+                    <div class="card-background"></div>
+                    <div class="card-content">
+                        <h3>Why Choose Me?</h3>
+                        <ul class="benefits-list">
+                            <li>
+                                <strong>Results-Driven:</strong> Every word is written with your business goals in mind
+                            </li>
+                            <li>
+                                <strong>Fast Turnaround:</strong> Quality work delivered on time, every time
+                            </li>
+                            <li>
+                                <strong>Strategic Approach:</strong> Copy that aligns with your brand and converts
+                            </li>
+                            <li>
+                                <strong>Unlimited Revisions:</strong> We work together until you're 100% satisfied
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Clients Say About <span class="accent">My Work</span></h2>
+                <p>Don't just take my word for it. Here's what business owners and marketing professionals say about working with me.</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Chibuzor's copy increased our conversion rate by 340%. Her understanding of our audience and ability to craft compelling messages is exceptional."</p>
+                    <div class="testimonial-author">
+                        <div class="author-name">Sarah Johnson</div>
+                        <div class="author-role">Marketing Director, TechFlow</div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Working with Promise was a game-changer. She didn't just write copy—she understood our business goals and delivered content that actually moves the needle."</p>
+                    <div class="testimonial-author">
+                        <div class="author-name">Marcus Chen</div>
+                        <div class="author-role">Founder, GrowthLab</div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"The email sequences Promise wrote for us generated over $50k in additional revenue in the first month. Her strategic approach is unmatched."</p>
+                    <div class="testimonial-author">
+                        <div class="author-name">Emily Rodriguez</div>
+                        <div class="author-role">E-commerce Manager, StyleHub</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Business with Powerful Copy?</h2>
+                <p>Let's discuss your project and create copy that connects with your audience and drives the results you're looking for.</p>
+                
+                <div class="cta-buttons">
+                    <button class="btn btn-white btn-lg" onclick="openEmail()">
+                        Get Started Today
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-outline-white btn-lg">
+                        Schedule a Call
+                    </button>
+                </div>
+                
+                <div class="cta-contact">
+                    <p>Get in touch directly:</p>
+                    <a href="mailto:ikennachibuzor50@gmail.com" class="contact-email">ikennachibuzor50@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Chibuzor <span class="accent">Promise</span></h3>
+                    <p>Copywriting specialist helping businesses communicate their value and connect with their ideal customers through powerful, converting copy.</p>
+                    
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/chibuzor-promise" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:ikennachibuzor50@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Sales Copy</li>
+                        <li>Content Marketing</li>
+                        <li>Email Marketing</li>
+                        <li>Website Copy</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Get In Touch</h4>
+                    <div class="contact-info">
+                        <p>Ready to start your project?</p>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:ikennachibuzor50@gmail.com" class="contact-link">ikennachibuzor50@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/chibuzor-promise" target="_blank" rel="noopener noreferrer" class="contact-link">Connect on LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Chibuzor Promise. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
