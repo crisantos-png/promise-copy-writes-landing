@@ -20,7 +20,7 @@ const Header = () => {
             
             <div className="flex items-center space-x-3">
               <a 
-                href="https://www.linkedin.com/in/chibuzor-promise"
+                href="https://www.linkedin.com/in/chibuzor-promise-ikenna-820191366"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-green-600 transition-all duration-300 hover:scale-110"
@@ -29,7 +29,7 @@ const Header = () => {
                 <Linkedin size={20} />
               </a>
               <a 
-                href="mailto:ikennachibuzor50@gmail.com"
+                href="mailto:depromisesignature47@gmail.com"
                 className="text-gray-600 hover:text-green-600 transition-all duration-300 hover:scale-110"
                 aria-label="Email"
               >
@@ -39,7 +39,7 @@ const Header = () => {
             
             <Button 
               className="bg-green-600 hover:bg-green-700 text-white rounded-full px-6 hover:scale-105 transition-all duration-300"
-              onClick={() => window.open('mailto:ikennachibuzor50@gmail.com?subject=Project Inquiry', '_blank')}
+              onClick={() => window.open('mailto:depromisesignature47@gmail.com?subject=Project Inquiry', '_blank')}
             >
               Get Started
             </Button>
@@ -47,7 +47,7 @@ const Header = () => {
           
           <div className="md:hidden flex items-center space-x-3">
             <a 
-              href="https://www.linkedin.com/in/chibuzor-promise"
+              href="https://www.linkedin.com/in/chibuzor-promise-ikenna-820191366"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-green-600 transition-all duration-300"
@@ -57,7 +57,7 @@ const Header = () => {
             </a>
             <Button 
               className="bg-green-600 hover:bg-green-700 text-white rounded-full px-4 hover:scale-105 transition-all duration-300"
-              onClick={() => window.open('mailto:ikennachibuzor50@gmail.com?subject=Project Inquiry', '_blank')}
+              onClick={() => window.open('mailto:depromisesignature47@gmail.com?subject=Project Inquiry', '_blank')}
             >
               Contact
             </Button>

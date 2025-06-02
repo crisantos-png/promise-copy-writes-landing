@@ -18,7 +18,7 @@ const CTA = () => {
           <Button 
             size="lg" 
             className="bg-white text-green-600 hover:bg-gray-100 px-8 py-6 text-lg font-semibold rounded-full shadow-xl"
-            onClick={() => window.open('mailto:ikennachibuzor50@gmail.com?subject=Project Inquiry', '_blank')}
+            onClick={() => window.open('mailto:depromisesignature47@gmail.com?subject=Project Inquiry', '_blank')}
           >
             Get Started Today
             <ArrowRight className="ml-2 w-5 h-5" />
@@ -35,10 +35,10 @@ const CTA = () => {
         <div className="text-center">
           <p className="text-green-200 mb-2">Get in touch directly:</p>
           <a 
-            href="mailto:ikennachibuzor50@gmail.com" 
+            href="mailto:depromisesignature47@gmail.com" 
             className="text-lg font-semibold text-white hover:text-green-200 transition-colors"
           >
-            ikennachibuzor50@gmail.com
+            depromisesignature47@gmail.com
           </a>
         </div>
       </div>

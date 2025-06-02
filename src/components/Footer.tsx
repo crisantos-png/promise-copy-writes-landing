@@ -17,7 +17,7 @@ const Footer = () => {
             
             <div className="flex space-x-4">
               <a 
-                href="https://www.linkedin.com/in/chibuzor-promise"
+                href="https://www.linkedin.com/in/chibuzor-promise-ikenna-820191366"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-200 hover:text-green-400 transition-all duration-300 hover:scale-110 hover:-translate-y-1"
@@ -26,7 +26,7 @@ const Footer = () => {
                 <Linkedin size={24} />
               </a>
               <a 
-                href="mailto:ikennachibuzor50@gmail.com"
+                href="mailto:depromisesignature47@gmail.com"
                 className="text-green-200 hover:text-green-400 transition-all duration-300 hover:scale-110 hover:-translate-y-1"
                 aria-label="Email"
               >
@@ -52,16 +52,16 @@ const Footer = () => {
               <div className="flex items-center space-x-2">
                 <Mail size={18} />
                 <a 
-                  href="mailto:ikennachibuzor50@gmail.com" 
+                  href="mailto:depromisesignature47@gmail.com" 
                   className="text-green-400 hover:text-green-300 transition-colors font-semibold"
                 >
-                  ikennachibuzor50@gmail.com
+                  depromisesignature47@gmail.com
                 </a>
               </div>
               <div className="flex items-center space-x-2">
                 <Linkedin size={18} />
                 <a 
-                  href="https://www.linkedin.com/in/chibuzor-promise"
+                  href="https://www.linkedin.com/in/chibuzor-promise-ikenna-820191366"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-green-400 hover:text-green-300 transition-colors font-semibold"
