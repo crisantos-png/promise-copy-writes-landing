@@ -6,19 +6,16 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: "Sarah Johnson",
-      role: "Marketing Director, TechFlow",
       content: "Chibuzor's copy increased our conversion rate by 340%. Her understanding of our audience and ability to craft compelling messages is exceptional.",
       rating: 5
     },
     {
       name: "Marcus Chen",
-      role: "Founder, GrowthLab",
       content: "Working with Promise was a game-changer. She didn't just write copy—she understood our business goals and delivered content that actually moves the needle.",
       rating: 5
     },
     {
       name: "Emily Rodriguez",
-      role: "E-commerce Manager, StyleHub",
       content: "The email sequences Promise wrote for us generated over $50k in additional revenue in the first month. Her strategic approach is unmatched.",
       rating: 5
     }
@@ -51,7 +48,6 @@ const Testimonials = () => {
                 </p>
                 <div>
                   <div className="font-semibold text-white">{testimonial.name}</div>
-                  <div className="text-green-300 text-sm">{testimonial.role}</div>
                 </div>
               </CardContent>
             </Card>
